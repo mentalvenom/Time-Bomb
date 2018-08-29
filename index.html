@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Page Title</title>
+       <link href='https://fonts.googleapis.com/css?family=Averia Gruesa Libre' rel='stylesheet'>
+<style> 
+    </head>
+    <body>
+     <span id="time"></span>
+     <br>
+    
+         <b id="a"></b>
+        
+        <button id="str" onclick="start()">Can you survive?</button>
+        <p id="im"><img src="http://3dsc.facennafineart.com/JedGallery/halloween2011.jpg" height="450px" width="450px"></p>
+       <p id="ii">
+        <button id="bt" onclick="ap()"></button>
+        </p>
+        <p id="i"></p>
+        <p id="in1">The code reads 74635363.It encrypts a text message decode it.Its a dialpad cipher.Try dialing the code in a standard dialpad.</p>
+        <p id="in">The code reads 42212352.It encrypts a text message decode it.Its a dialpad cipher.Try dialing the code in a standard dialpad.</p>
+        <br>
+        <input id='list' 
+        size="20" style="font-size:20px" placeholder="Enter a code here.Press enter" onfocus="clearInput(this)"/>
+        
+        
+        <br>
+        <p id="el">Wrong code,try again!!!</p>
+        <br>
+        <button id="en" onclick="ch()">Enter</button>
+        
+        <script>
+            function startTimer(duration, display) { 
+    var timer = duration, minutes, seconds;
+    var x = setInterval(function () { 
+        minutes = parseInt(timer / 60, 10);
+        seconds = parseInt(timer % 60, 10); 
+    
+        minutes = minutes < 10 ? "0" + minutes : minutes; 
+        seconds = seconds < 10 ? "0" + seconds : seconds; 
+        display.textContent = minutes + ":" + seconds;
+        if (--timer < 0) { 
+            clearInterval(x)
+            display.textContent = "Time's up!"
+            
+            {
+                document.write('<span style ="color:teal;font-size: 25px">The bomb exploded,your last wish was to upvote this code.<br>')
+            }
+            
+        } 
+    }, 1000); 
+} 
+
+window.onload = function () { 
+    var time = 90, 
+    display = document.querySelector('#time');
+    startTimer(time, display); 
+};
+        </script>
+    </body>
+</html>
